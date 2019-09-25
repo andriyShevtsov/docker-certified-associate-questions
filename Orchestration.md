@@ -10,11 +10,21 @@
 
 ##  State the differences between running a container vs running a service
 
+???
+
+## Demonstrate steps to lock a swarm cluster
+- Initialize a swarm with autolocking enabled `$ docker swarm init --autolock`
+-  Enable or disable autolock on an existing swarm `docker swarm update --autolock=true`
 
 
-• Demonstrate steps to lock a swarm cluster
-• Extend the instructions to run individual containers into running services under swarm
-• Interpret the output of "docker inspect" commands
+
+## Extend the instructions to run individual containers into running services under swarm
+1. Create a service`$ docker service create --name="myservice" --replicas 3 ubuntu:latest`
+2. Change a service: `docker service update --replicas 5 myservice`
+
+## Interpret the output of "docker inspect" commands
+
+
 • Convert an application deployment into a stack file using a YAML compose file with "docker stack deploy"
 • Manipulate a running stack of services
 • Increase # of replicas
