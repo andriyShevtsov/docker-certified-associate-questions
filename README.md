@@ -5,6 +5,7 @@ List of topic and questions:
 [Orchestration](https://github.com/andriyShevtsov/docker-certified-associate-questions/blob/master/Orchestration.txt)
 
 • Complete the setup of a swarm mode cluster, with managers and worker nodes 
+
 • State the differences between running a container vs running a service 
 • Demonstrate steps to lock a swarm cluster 
 • Extend the instructions to run individual containers into running services under swarm 
@@ -105,4 +106,3 @@ Storage and Volumes
 • Describe how volumes are used with Docker for persistent storage 
 • Identify the steps you would take to clean up unused images on a filesystem, also on DTR 
 • Demonstrate how storage can be used across cluster nodes 
- 
