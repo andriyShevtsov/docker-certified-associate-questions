@@ -1,6 +1,6 @@
-1. Complete the setup of a swarm mode cluster, with managers and worker nodes
+# Complete the setup of a swarm mode cluster, with managers and worker nodes
 
-- create a new swarm `$ docker swarm init --advertise-addr <MANAGER-IP>`
+- Create a new swarm ```$ docker swarm init --advertise-addr <MANAGER-IP>```
 - To retrieve the join command including the join token for worker nodes, run the following command on a manager node: `$ docker swarm join-token worker`
   - To retrieve the join command including the join token for manager nodes, run the following command on a manager node: `$ docker swarm join-token manager`
 - Run the command from the output on the worker to join the swarm: ```docker swarm join \
