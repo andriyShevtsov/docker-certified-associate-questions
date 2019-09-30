@@ -2,7 +2,7 @@
 Here you can find short answers to questions from DCA study guide
 List of topic and questions:
 
-[1. Orchestration](https://github.com/andriyShevtsov/docker-certified-associate-questions/blob/master/Orchestration.md)
+[1. Orchestration](https://github.com/andriyShevtsov/docker-certified-associate-questions/blob/master/1.Orchestration.md)
 
 - Complete the setup of a swarm mode cluster, with managers and worker nodes
 - State the differences between running a container vs running a service
@@ -22,7 +22,7 @@ List of topic and questions:
 - Demonstrate the usage of templates with "docker service create"
 
 
-[2. Image Creation, Management, and Registry](https://github.com/andriyShevtsov/docker-certified-associate-questions/blob/master/Image%20Creation%2C%20Management%2C%20and%20Registry.md)
+[2. Image Creation, Management, and Registry](https://github.com/andriyShevtsov/docker-certified-associate-questions/blob/master/2.Image%20Creation%2C%20Management%2C%20and%20Registry.md)
 
 - Describe Dockerfile options [add, copy, volumes, expose, entrypoint, etc)
 - Show the main parts of a Dockeffile
@@ -47,7 +47,7 @@ List of topic and questions:
 - Delete an image from a registry
 
 
-[3. Installation and Configuration](https://github.com/andriyShevtsov/docker-certified-associate-questions/blob/master/Installation%20and%20Configuration.md)
+[3. Installation and Configuration](https://github.com/andriyShevtsov/docker-certified-associate-questions/blob/master/3.Installation%20and%20Configuration.md)
 
 - Demonstrate the ability to upgrade the Docker engine
 - Complete setup of repo, select a storage driver, and complete installafion of Docker engine on multiple platforms
@@ -63,7 +63,7 @@ List of topic and questions:
 - Configure the Docker daemon to start on boot
 
 
-[4. Networking](https://github.com/andriyShevtsov/docker-certified-associate-questions/blob/master/Networking.md)
+[4. Networking](https://github.com/andriyShevtsov/docker-certified-associate-questions/blob/master/4.Networking.md)
 
 - Create a Docker bridge network for a developer to use for their containers
 - Troubleshoot container and engine logs to understand a connectivity issue between containers
@@ -79,7 +79,7 @@ List of topic and questions:
 
 
 
-[5. Security](https://github.com/andriyShevtsov/docker-certified-associate-questions/blob/master/Security.md)
+[5. Security](https://github.com/andriyShevtsov/docker-certified-associate-questions/blob/master/5.Security.md)
 
 
 - Describe the process of signing an image
@@ -96,7 +96,7 @@ List of topic and questions:
 - Describe process to use external certificates with UCP and DTR
 
 
-[6. Storage and Volumes](https://github.com/andriyShevtsov/docker-certified-associate-questions/blob/master/Storage%20and%20Volumes.md)
+[6. Storage and Volumes](https://github.com/andriyShevtsov/docker-certified-associate-questions/blob/master/6.Storage%20and%20Volumes.md)
 
 
 - State which graph driver should be used on which OS
