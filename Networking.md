@@ -1,0 +1,61 @@
+Networking
+
+## Create a Docker bridge network for a developer to use for their containers
+
+- `docker network create --driver bridge my-bridge-net`
+- `docker run -d --network my-bridge-net nginx`
+
+
+## Troubleshoot container and engine logs to understand a connectivity issue between containers
+- To view container logs, enter: `docker logs CONTAINER`
+- To view logs for all tasks of a service, execute: `docker service logs SERVICE`
+- To view Docker daemon logs, input: `sudo jounralctl -u docker`
+
+## Publish a port so that an application is accessible externally
+The host port is the port that will listen on the host. Requests to that port on the host will be forwarded to the CONTAINER_PORT inside the container` docker run -d -p HOST_PORT:CONTAINER_PORT IMAGE`
+
+## Identify which IP and port a container is externally accessible on
+
+## Describe the different types and use cases for the built-in network drivers
+*Host*
+This driver connects the container directly to the host’s networking stack. It provides no isolation between containers or between containers and the host.
+`docker run --net host nginx`
+
+*Bridge*
+This driver uses virtual bridge interfaces to establish connections between containers running on the same host.
+`docker network create --driver bridge my-bridge-net`
+`docker run -d --network my-bridge-net nginx`
+
+*Overlay*
+This driver uses a routing mesh to connect containers across multiple Docker hosts, usually in a Docker swarm
+`docker network create --driver overlay my-overlay-net`
+`docker service create --network my-overlay-net nginx`
+
+*MACVLAN*
+This driver connect containers directly to the host’s network interfaces, but uses special configuration to provide isolation.
+
+`docker network create -d macvlan --subnet 192.168.0.0/24 --gateway 192.168.0.1 -o parent=eth0 \
+my-macvlan-net
+docker run -d --net my-macvlan-net nginx`
+
+*None*
+This driver provides sandbox isolation, but it does not provide any implementation for networking between containers or between containers and the host.
+`docker run --net none -d nginx`
+
+
+
+## Understand the Container Network Model and how it interfaces with the Docker engine and network and IPAM drivers
+
+**???**
+
+
+## Configure Docker to use external DNS
+
+## Use Docker to load balance HTTP/HTTPs traffic to an application (Configure L7 load balancing with Docker EE)
+
+
+## Understand and describe the types of traffic that flow between the Docker engine, registry, and UCP controllers
+
+## Deploy a service on a Docker overlay network
+
+## Describe the difference between "host" and "ingress" port publishing mode

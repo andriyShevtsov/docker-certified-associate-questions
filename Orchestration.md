@@ -1,4 +1,7 @@
+# Orchestration
+
 ##  1. Complete the setup of a swarm mode cluster, with managers and worker nodes
+
 
 1. create a new swarm `$ docker swarm init --advertise-addr <MANAGER-IP>`
 2. To retrieve the join command including the join token for worker/manager nodes, run the following command on a manager node: `$ docker swarm join-token worker/manager`
@@ -83,6 +86,20 @@ Use `--placement-pref` to spread tasks evenly based on the value of a specific l
 `docker service create --placement-pref spread=node.labels.availability_zone --replicas 3 nginx`
 
 ## 13. Sketch how a Dockerized application communicates with legacy systems
+
+
 ## 14. Paraphrase the importance of quorum in a swarm cluster
+To make our swarm cluster highly available, we must use multiple manager nodes. Swarm managers use a consensus algorithm to maintain consistent data about the swarm state across
+all nodes. This algorithm requires that a quorum be maintained for changes to be made to the cluster.
+
+*Quorum:* The majority (more than half) of the manager nodes in our swarm. To achieve quorum, more than half of the total amount of nodes in our swarm must be available and communicate with the other available nodes. Remember if exactly half of our nodes are available, this does not count as a quorum. We must have
+more than half.
+
+
 ## 15. Demonstrate the usage of templates with "docker service create"
+
+
+**???**
+
+
 ## 16. Manipulate a running stack of services
