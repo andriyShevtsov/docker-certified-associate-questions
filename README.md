@@ -2,27 +2,10 @@
 Here you can find short answers to questions from DCA study guide
 List of topic and questions:
 
-[Orchestration](https://github.com/andriyShevtsov/docker-certified-associate-questions/blob/master/Orchestration.md)
-
-- Complete the setup of a swarm mode cluster, with managers and worker nodes
-- State the differences between running a container vs running a service
-- Demonstrate steps to lock a swarm cluster
-- Extend the instructions to run individual containers into running services under swarm
-- Interpret the output of "docker inspect" commands
-- Convert an application deployment into a stack file using a YAML compose file with "docker stack deploy"
-- Manipulate a running stack of services
-- Increase # of replicas
-- Add networks, publish ports
-- Mount volumes
-- Illustrate running a replicated vs global service
-- Identify the steps needed to troubleshoot a service not deploying
-- Apply node labels to demonstrate placement of tasks
-- Sketch how a Dockerized application communicates with legacy systems
-- Paraphrase the importance of quorum in a swarm cluster
-- Demonstrate the usage of templates with "docker service create"
 
 
-[Image Creation, Management, and Registry](https://github.com/andriyShevtsov/docker-certified-associate-questions/blob/master/?? .md)
+
+[Image Creation, Management, and Registry](https://github.com/andriyShevtsov/docker-certified-associate-questions/blob/master/Image%20Creation%2C%20Management%2C%20and%20Registry.md)
 
 - Describe Dockerfile options [add, copy, volumes, expose, entrypoint, etc)
 - Show the main parts of a Dockeffile
@@ -47,7 +30,7 @@ List of topic and questions:
 - Delete an image from a registry
 
 
-[Installation and Configuration](https://github.com/andriyShevtsov/docker-certified-associate-questions/blob/master/?? .md)
+[Installation and Configuration](https://github.com/andriyShevtsov/docker-certified-associate-questions/blob/master/Installation%20and%20Configuration.md)
 
 - Demonstrate the ability to upgrade the Docker engine
 - Complete setup of repo, select a storage driver, and complete installafion of Docker engine on multiple platforms
@@ -63,7 +46,7 @@ List of topic and questions:
 - Configure the Docker daemon to start on boot
 
 
-[Networking](https://github.com/andriyShevtsov/docker-certified-associate-questions/blob/master/?? .md)
+[Networking](https://github.com/andriyShevtsov/docker-certified-associate-questions/blob/master/Networking.md)
 
 - Create a Docker bridge network for a developer to use for their containers
 - Troubleshoot container and engine logs to understand a connectivity issue between containers
@@ -77,8 +60,26 @@ List of topic and questions:
 - Deploy a service on a Docker overlay network
 - Describe the difference between "host" and "ingress" port publishing mode
 
+[Orchestration](https://github.com/andriyShevtsov/docker-certified-associate-questions/blob/master/Orchestration.md)
 
-[Security](https://github.com/andriyShevtsov/docker-certified-associate-questions/blob/master/?? .md)
+- Complete the setup of a swarm mode cluster, with managers and worker nodes
+- State the differences between running a container vs running a service
+- Demonstrate steps to lock a swarm cluster
+- Extend the instructions to run individual containers into running services under swarm
+- Interpret the output of "docker inspect" commands
+- Convert an application deployment into a stack file using a YAML compose file with "docker stack deploy"
+- Manipulate a running stack of services
+- Increase # of replicas
+- Add networks, publish ports
+- Mount volumes
+- Illustrate running a replicated vs global service
+- Identify the steps needed to troubleshoot a service not deploying
+- Apply node labels to demonstrate placement of tasks
+- Sketch how a Dockerized application communicates with legacy systems
+- Paraphrase the importance of quorum in a swarm cluster
+- Demonstrate the usage of templates with "docker service create"
+
+[Security](https://github.com/andriyShevtsov/docker-certified-associate-questions/blob/master/Security.md)
 
 
 - Describe the process of signing an image
@@ -95,7 +96,7 @@ List of topic and questions:
 - Describe process to use external certificates with UCP and DTR
 
 
-[Storage and Volumes](https://github.com/andriyShevtsov/docker-certified-associate-questions/blob/master/?? .md)
+[Storage and Volumes](https://github.com/andriyShevtsov/docker-certified-associate-questions/blob/master/Storage%20and%20Volumes.md)
 
 
 - State which graph driver should be used on which OS
